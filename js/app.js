@@ -25,10 +25,11 @@ document.addEventListener("keydown", checkKeyPressed, false);
 // L = 76
 
 
+const classId = key.classList;
+
 function checkKeyPressed(e) {
-    if (e.keyCode == "65") {
-        keyA.classList.add("keyPressed");
-        keyA.classList.remove("key");
+    if (e.keyCode === 65) {
+        classId.replace("key", "key-pressed");
     }
     console.log(e.keyCode);
 };
