@@ -12,7 +12,7 @@ const keyL = document.querySelector("#keyL");
 const key = document.querySelector(".key");
 
 document.addEventListener("keydown", checkKeyPressed, false); 
- 
+
 // KEYCODES FOR BUTTONS
 // A = 65
 // S = 83
@@ -24,12 +24,35 @@ document.addEventListener("keydown", checkKeyPressed, false);
 // K = 75
 // L = 76
 
+// not sure if i need this yet
+const keyArray = [];
+const keyIds = document.querySelectorAll(`[id]`);
+keyIds.forEach(element => {
+keyArray.push(element.id);
+});
 
+
+// still figuring this out /////////////////////
 const classId = key.classList;
 
 function checkKeyPressed(e) {
     if (e.keyCode === 65) {
-        classId.replace("key", "key-pressed");
+        keyA.classList.remove("key");
+        keyA.classList.add("key-pressed");
+        setTimeout(() => {
+        keyA.classList.remove("key-pressed");
+        keyA.classList.add("key");
+          }, 100);
     }
-    console.log(e.keyCode);
 };
+////////////////////////////////////////////////
+
+
+
+
+//saving this for later
+// setTimeout(() => {
+//     // Sets timeout to 5 seconds -- add stuff here
+//   }, 5000);
+
+
