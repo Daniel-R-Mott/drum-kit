@@ -108,11 +108,16 @@ height: 800px;
 }
 
 .key-pressed {
+  border: 1.5px orange dotted;
+-webkit-box-shadow:inset 0px 0px 0px 4px orange;
+ -moz-box-shadow:inset 0px 0px 0px 4px orange; 
+  box-shadow: 0px 0px 0px 4px orange;
+  width: 10%;
+  align-items: center;
   transform:scale(1.1);
   border-color:#ffc630;
-  box-shadow: 0 0 10px #ffc600;
   border-radius: 10%;
-  width: 10%;
+  width: 10%; 
 }
 
 h3 {
