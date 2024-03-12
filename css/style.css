@@ -90,17 +90,23 @@ border: 1px dotted red;
 justify-content: center;
 align-items: center;
 height: 800px;
+background-image: url("../img/nathan-fertig-IW5Bm4rB9OA-unsplash.jpg");
 }
 
 .wrapper {
   display: inline-flex;
   justify-content: center;
   width: 80%;
+  max-width: 985px;
   border: 1px dotted green;
+  margin-bottom: 75px;
 }
 
 .key {
-  border: 1.5px black solid;
+  border: 2px white solid;
+  color: white;
+  opacity: 0.2;
+  background-color: black;
   border-radius: 10%;
   width: 10%;
   align-items: center;
