@@ -5,7 +5,6 @@ function playSound(e) {
   audio.currentTime = 0;
   audio.play();
   key.classList.add('key-pressed');
-  console.log(key);
 };
 
 function removeTransition(e) {
