@@ -97,6 +97,10 @@ background-image: url("../img/nathan-fertig-IW5Bm4rB9OA-unsplash.jpg");
 background-repeat: no-repeat;
 }
 
+body {
+  background-image: linear-gradient(#5f5f5f,black);
+}
+
 .wrapper {
   display: inline-flex;
   justify-content: center;
@@ -106,7 +110,7 @@ background-repeat: no-repeat;
 }
 
 .key {
-  border:4px solid white;
+  border:4px solid rgb(230, 230, 230);
   border-radius: 10px;
   margin:0.5rem;
   height: 100px;
