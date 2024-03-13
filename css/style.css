@@ -1,28 +1,12 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+/* HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -34,10 +18,6 @@ html {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
 hr {
   display: block;
   height: 1px;
@@ -46,12 +26,6 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -62,44 +36,27 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
 textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
 main {
-display: flex;
-background-color:black;
-background-position: center;
-justify-content: center;
-align-items: center;
-height:98vh;
-background-size:cover;
-width:100%;
-background-image: url("../img/nathan-fertig-IW5Bm4rB9OA-unsplash.jpg");
-background-repeat: no-repeat;
-}
-
-body {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 33%, rgba(0,0,0,1) 48%, rgba(45,45,45,1) 66%, rgba(33,33,33,1) 87%);
+  display: flex;
+  background-color: black;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  background-size: cover;
+  width: 100%;
+  background-image: url("../img/nathan-fertig-IW5Bm4rB9OA-unsplash.jpg");
+  background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -111,18 +68,23 @@ body {
 }
 
 .key {
-  border:4px solid rgb(230, 230, 230);
+  border: 4px solid white;
   border-radius: 10px;
-  margin:0.5rem;
+  margin: 0.5rem;
   height: 100px;
   font-size: 1.5rem;
-  transition:all .09s;
+  transition: all 0.09s;
   width: 100px;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.6);
-  text-shadow: 0 0  10px black;
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 10px black;
   padding: 0;
+}
+
+.key:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer; 
 }
 
 .key p {
@@ -130,71 +92,29 @@ body {
 }
 
 .key-pressed {
-  transform:scale(1.2);
+  transform: scale(1.2);
   border-color: #ffc600;
   text-shadow: 0 0 10px #ffc600;
 }
 
 h3 {
   text-align: center;
-  margin-top:12px;
-margin-bottom:10px;
-font-family: "Exo 2", sans-serif;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-family: "Exo 2", sans-serif;
 }
 
 p {
   text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #ffc600;
   margin: 0;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
 
 .hidden,
 [hidden] {
   display: none !important;
 }
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
 
 .visually-hidden {
   border: 0;
@@ -206,14 +126,7 @@ p {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  /* 1 */
 }
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
 
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
@@ -226,20 +139,9 @@ p {
   width: auto;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
 .invisible {
   visibility: hidden;
 }
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
 
 .clearfix::before,
 .clearfix::after {
@@ -251,28 +153,14 @@ p {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
 }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
 
 @media print {
   *,
@@ -280,7 +168,6 @@ p {
   *::after {
     background: #fff !important;
     color: #000 !important;
-    /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -298,10 +185,6 @@ p {
     content: " (" attr(title) ")";
   }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -334,4 +217,3 @@ p {
     page-break-after: avoid;
   }
 }
-

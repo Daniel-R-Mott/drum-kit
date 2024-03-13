@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
 
 <head>
@@ -78,7 +78,51 @@
 </main>
 <footer></footer>
 
-  <script src="js/app.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const keys = document.querySelectorAll(".key");
+
+    
+    function playSound(key) {
+      const keyCode = key.getAttribute("data-key");
+      const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
+      if (!audio) return;
+      audio.currentTime = 0;
+      audio.play();
+      key.classList.add("playing");
+    }
+
+    
+    function handleClick() {
+      playSound(this);
+    }
+
+    
+    keys.forEach((key) => {
+      key.addEventListener("click", handleClick);
+    });
+
+    
+    function removeTransition(e) {
+      if (e.propertyName !== "transform") return;
+      this.classList.remove("playing");
+    }
+
+    
+    keys.forEach((key) => {
+      key.addEventListener("transitionend", removeTransition);
+    });
+
+    
+    function handleKeyDown(e) {
+      const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+      if (key) playSound(key);
+    }
+
+    
+    window.addEventListener("keydown", handleKeyDown);
+  });
+</script>
 
 </body>
 
