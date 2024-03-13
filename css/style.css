@@ -98,7 +98,8 @@ background-repeat: no-repeat;
 }
 
 body {
-  background-image: linear-gradient(#5f5f5f,black);
+  background: rgb(0,0,0);
+  background: linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 49%, rgba(122,122,122,1) 71%, rgba(34,34,34,1) 87%, rgba(42,42,42,1) 100%);
 }
 
 .wrapper {
