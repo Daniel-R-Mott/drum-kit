@@ -27,7 +27,7 @@ body {
   justify-content: center;
   width: 100%;
   max-width: 985px;
-  margin-bottom: 250px;
+  margin-bottom: 0px;
 }
 
 .key {
@@ -68,7 +68,6 @@ p {
   color: #ffc600;
   margin: 0;
 }
-
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
