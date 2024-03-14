@@ -90,9 +90,8 @@ background-color:black;
 background-position: center;
 justify-content: center;
 align-items: center;
-height:98vh;
+height: 98vh;
 background-size:cover;
-width:100%;
 background-image: url("../img/nathan-fertig-IW5Bm4rB9OA-unsplash.jpg");
 background-repeat: no-repeat;
 }
@@ -103,17 +102,18 @@ body {
 }
 
 .wrapper {
+  flex-wrap: wrap;
   display: inline-flex;
   justify-content: center;
   width: 100%;
   max-width: 985px;
-  margin-bottom: 250px;
+  margin-bottom: 0px;
 }
 
 .key {
   border:4px solid rgb(230, 230, 230);
   border-radius: 10px;
-  margin:0.5rem;
+  margin:1rem;
   height: 100px;
   font-size: 1.5rem;
   transition:all .09s;
@@ -257,8 +257,73 @@ p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 1024px) {
+
+  main {
+    display: flex;
+    background-color:black;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    height:98vh;
+    background-size:cover;
+    width:100%;
+    background-image: url("../img/nathan-fertig-IW5Bm4rB9OA-unsplash.jpg");
+    background-repeat: no-repeat;
+    }
+    
+    body {
+      background: rgb(0,0,0);
+      background: linear-gradient(0deg, rgba(0,0,0,1) 33%, rgba(0,0,0,1) 48%, rgba(45,45,45,1) 66%, rgba(33,33,33,1) 87%);
+    }
+    
+    .wrapper {
+      display: inline-flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 985px;
+      margin-bottom: 250px;
+    }
+    
+    .key {
+      border:4px solid rgb(230, 230, 230);
+      border-radius: 10px;
+      margin:0.5rem;
+      height: 100px;
+      font-size: 1.5rem;
+      transition:all .09s;
+      width: 100px;
+      text-align: center;
+      color: white;
+      background: rgba(0,0,0,0.6);
+      text-shadow: 0 0  10px black;
+      padding: 0;
+    }
+    
+    .key p {
+      font-size: 1rem;
+    }
+    
+    .key-pressed {
+      transform:scale(1.2);
+      border-color: #ffc600;
+      text-shadow: 0 0 10px #ffc600;
+    }
+    
+    h3 {
+      text-align: center;
+      margin-top:12px;
+    margin-bottom:10px;
+    font-family: "Exo 2", sans-serif;
+    }
+    
+    p {
+      text-align: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #ffc600;
+      margin: 0;
+    
+    }
 }
 
 @media print,
