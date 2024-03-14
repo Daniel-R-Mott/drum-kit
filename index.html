@@ -1,85 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="description" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <header></header>
+    <main>
+      <div class="wrapper">
+        <div class="key" data-key="65" onclick="getDataKey(this)">
+          <h3>A</h3>
+          <p>CLAP</p>
+        </div>
+        <div class="key" data-key="83" onclick="getDataKey(this)">
+          <h3>S</h3>
+          <p>HIHAT</p>
+        </div>
+        <div class="key" data-key="68" onclick="getDataKey(this)">
+          <h3>D</h3>
+          <p>KICK</p>
+        </div>
+        <div class="key" data-key="70" onclick="getDataKey(this)">
+          <h3>F</h3>
+          <p>OPENHAT</p>
+        </div>
+        <div class="key" data-key="71" onclick="getDataKey(this)">
+          <h3>G</h3>
+          <p>BOOM</p>
+        </div>
+        <div class="key" data-key="72" onclick="getDataKey(this)">
+          <h3>H</h3>
+          <p>PHONK</p>
+        </div>
+        <div class="key" data-key="74" onclick="getDataKey(this)">
+          <h3>J</h3>
+          <p>SNARE</p>
+        </div>
+        <div class="key" data-key="75" onclick="getDataKey(this)">
+          <h3>K</h3>
+          <p>TOM</p>
+        </div>
+        <div class="key" data-key="76" onclick="getDataKey(this)">
+          <h3>L</h3>
+          <p>ZAP</p>
+        </div>
+      </div>
+      <audio data-key="65" src="sounds/trap-clap-clean.wav"></audio>
+      <audio data-key="83" src="sounds/cl_hihat.wav"></audio>
+      <audio data-key="68" src="sounds/kick1.wav"></audio>
+      <audio data-key="70" src="sounds/open_hh.wav"></audio>
+      <audio data-key="71" src="sounds/kick2.wav"></audio>
+      <audio data-key="72" src="sounds/cowbell.wav"></audio>
+      <audio data-key="74" src="sounds/snare.wav"></audio>
+      <audio data-key="75" src="sounds/tom1.wav"></audio>
+      <audio data-key="76" src="sounds/deepzap.wav"></audio>
+    </main>
+    <footer></footer>
 
-<body>
-<header></header>
-<main>
-  <div class="wrapper">
-    <div class="key" data-key="65" onclick="getDataKey(this)">
-      <h3>A</h3>
-      <p>CLAP</p>
-    </div>
-    <div class="key" data-key="83" onclick="getDataKey(this)">
-      <h3>S</h3>
-      <p>HIHAT</p>
-    </div>
-    <div class="key" data-key="68" onclick="getDataKey(this)">
-      <h3>D</h3>
-      <p>KICK</p>
-    </div>
-    <div class="key" data-key="70" onclick="getDataKey(this)">
-      <h3>F</h3>
-      <p>OPENHAT</p>
-    </div>
-    <div class="key" data-key="71" onclick="getDataKey(this)">
-      <h3>G</h3>
-      <p>BOOM</p>
-    </div>
-    <div class="key" data-key="72" onclick="getDataKey(this)">
-      <h3>H</h3>
-      <p>PHONK</p>
-    </div>
-    <div class="key" data-key="74" onclick="getDataKey(this)">
-      <h3>J</h3>
-      <p>SNARE</p>
-    </div>
-    <div class="key" data-key="75" onclick="getDataKey(this)">
-      <h3>K</h3>
-      <p>TOM</p>
-    </div>
-    <div class="key" data-key="76" onclick="getDataKey(this)">
-      <h3>L</h3>
-      <p>ZAP</p>
-    </div>
-  </div>
-  <audio data-key="65" src="sounds/trap-clap-clean.wav"></audio>
-  <audio data-key="83" src="sounds/cl_hihat.wav"></audio>
-  <audio data-key="68" src="sounds/kick1.wav"></audio>
-  <audio data-key="70" src="sounds/open_hh.wav"></audio>
-  <audio data-key="71" src="sounds/kick2.wav"></audio>
-  <audio data-key="72" src="sounds/cowbell.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom1.wav"></audio>
-  <audio data-key="76" src="sounds/deepzap.wav"></audio>
-
-</main>
-<footer></footer>
-
-  <script src="js/app.js"></script>
-
-</body>
-
+    <script src="js/app.js"></script>
+  </body>
 </html>
