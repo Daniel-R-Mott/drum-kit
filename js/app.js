@@ -1,7 +1,7 @@
 window.addEventListener("keydown", getKeyCode);
 
 function getDataKey(d) {
-  playSound(d.getAttribute("data-key"));
+  playSound(parseInt(d.getAttribute("data-key")));
 }
 
 function getKeyCode(e) {
@@ -9,8 +9,8 @@ function getKeyCode(e) {
 }
 
 function playSound(e) {
-  /* if (e.repeat)
-  return;*/
+  if (e.repeat)
+  return;
   const audio = document.querySelector(`audio[data-key="${e}"]`);
   const key = document.querySelector(`.key[data-key="${e}"]`);
   if (!audio) return;
@@ -27,3 +27,4 @@ function removeTransition(e) {
   if (e.propertyName !== "transform") return;
   this.classList.remove("key-pressed");
 }
+
